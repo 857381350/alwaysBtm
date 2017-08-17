@@ -1,7 +1,7 @@
 
 (function ($) {
 	$.fn.onBtm = function(options) {
-		var screenH = document.body.clientHeight;// 获取页面可视高度
+		var screenH = $(window).height();// 获取页面可视高度
 		var footerH = $(this).height();//获取footer的高度
 		var footerTop = $(this).offset().top;
 		var isFixed = footerH + footerTop;
